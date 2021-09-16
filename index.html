@@ -12,54 +12,13 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Notify- Home page</title>
-      <link rel = "icon" href = 
-     "icon.png"
+     
+     <link rel = "icon" href = 
+     "icon_music.png"
              type = "image/x-icon">
-    <style>
-        body{
-            background-color: #eaf9fa;
-        }
-        div.a{
-            width: 600px;
-            padding-left: 10px;;
-            margin: 20px;
-            font-size: 90px;
-            line-height: 1.2;
-            text-shadow: 1px 1px;
-            padding-top: 60px;
-            text-align: center;
-            
-        }
-        div.b{
-            width: 550px;
-            padding-left: 60px;;
-            margin: 20px;
-            font-size: 25px;
-            text-align: center;
-            
-        }
-        /* Modify the background color */
-         
-        .navbar-custom {
-            background-color:#ffffff ;
-        }
-        /* Modify brand and text color */
-         
-        .navbar-custom .navbar-brand
-       {
-            color: rgb(0, 0, 0);
-        }
-        .navbar-custom .navbar-text
-       {
-            color: rgb(0, 0, 0);
-        }
-        .img {
-    float: right;
-    padding-right: 120px;}
-        
-    </style>
+    
 </head>
-<body>
+<body id="a1">
     <nav class="navbar navbar-fixed-top navbar-custom">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -68,9 +27,9 @@
             
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Songs</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#">About us</a></li>
             </ul>
            
             <ul class="nav navbar-nav navbar-right">
@@ -99,22 +58,36 @@
      </div>
     
 </div>
-<div class="section">
-        <div class="sec-3-img">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEUAAAD+/v7////8/Pzl5eVQUFAEBAT7+/u8vLzBwcFlZWX29vbT09OioqLs7Ozd3d3y8vJeXl7Y2NhCQkKqqqqEhISNjY2enp6srKwwMDBHR0dZWVnMzMx2dnbi4uKWlpYPDw97e3sYGBg1NTUcHBwoKCi0tLQkJCRMTEyHh4e/vb5ERESTkZJsbGw7OzvmHlD0AAAJcElEQVR4nO2cfXuqPA/AIXUUh4KvqNM5dZtu99y+/8d72tICOqblpUXPk98fu87FQWhIm6ZJWsdBEARBEARBEARBEARBEARBEARBEARBEARB/jk2bTfAJMOOGz233QijdMEF+KdF9MElsG67FSZhErpup+1WmIRLCP++hFHbrTCJkLDXditMghLePyjh/YMS3j8o4f3zfyLhqO1WmOTePG/v1z+uUVJC9txdiacbgL27TydlJdTvpZ4zhemuUtMaYwQuzHVv9pw5sPtn+o+P2e3thgQmfM3ORfQ01bgPqO4HYY88Atf5tnLzGkBEJVyYaN7u5f5q3HwEKj9ge3yAElHfHOjd6Ykuyp89WFRtXX1YP3oUrRBabNbkcQ22LqAYfN+iHQT6TsMyvgBhfRTC1yYfWoFMi319c6PzWGFkmAbbFjDpqKBEbOypTIPCyARtdtGMnBabwXNmiQbDn6YeWYtMi7NmhmKmwacGnlYfPviGDXZU9rw+ECHgT6suaZ4TLdZ9lpc4StQNxg00rSFYq4aNicgEZBoE3kW9m9Eh1+JSzs+1H7Vk34oQl97GGEzxnKSjNpB1eRK94UaMTA6Pf3zWt/b1HzVjz7k1DXL4WAwGl4bh+8Nzf+6vRtHKnw0vWZEpbd+TKeKSy7b7fumGBPIEq7jYX0meczsmRofHVSCEcvNwIbuiZuG+hClgGp7JlsrIp4T5Q9vtq8tD5w/5Uk2uhm23sRYvF+VLhCSNr57t8Rqdy6fszOnF8LHtllbCc7YUzqWjYYcRnAkJbnyXWuzDiXQDfzteyOju4SdenwhJW40YVoKv8VTzCQXo/rInD/sgExGCx7vT4meu+dAtXKsvurl7wrc7E/E51/j1n3PeY6bGu8u5+ZD2v4tLxllqjZpw2q2yZ03nK1l6ZSY49FIRP+20rCQXxs5/bHLQCeiKNb0Q8TYia7/Y7MZP49fD2+lVLjmzJNHuWpjYEwvCRMIbLFocT/e9kMrlUCfyZ88PG35dCfWx1DKQe6lFuK0p4xCvBsI3ATWnC6/FDfdpHbenG+iXdonUj/I0A294PJLSidj0uXPWi9UyVjOVMWo6bF4H1uTFnMrgYTHsuuuXinYukn4K9O36vRbouyLxdRkAXz+r4iknVjubbAyemc25k8SlJ4rkgc6cjPsSCbe1FLH1teJTB2heCKDRahLH2+007vujwdmqKBhqt3cpM62z9iQUL54BKDXx0Nl6duZyfn2u3LyQ2nUUniN9m2DTbLPLsekBpVJCgHD2XnjXcy+Tkeh6m55Ml7sQN9jgsryHzMIwCUXiJPpOGnZKMuy+fC4jEQMVehudZ7PfyS+3arbRZXgdgLIvEH5fuXcFPEEmtNjRXPmtmsrtVMNzltk6x9WYmB9D9T14plOHmZxiv2o2tSqvnVTAzofWL3yxfHKTegMNLcpFc+HmPQv29b2XqqSr+5upsjgw2GjcPpQS/mGbPIXu60vip/b/Rf9H41CokejVF35AgamxNjnGVM7z5TaAbqLE36Q6FvJVSnhSBu45i0l/xuhL5hNG8w76OHApKTWDy+bJRQPVicLsinXYK/Ltmy1XZO2MEk+GwrH0ryPVu6dXV/skMab+6WVSkPmAsHQ7Lr7ZOYKY5iuFw3YDZaGWV+7cuIVFOYUSNhx6fEsGE6lWZP+R6J9cNai74oKVwl7acBJgpb5itex6rKIwV3rAAoqN9az7i4Z916Ga1Y4VbfdIhQsvf6GllFBHP81OIlKF1TeCPKlP1L3Ysq18T+F4NTkvPqlOVj0b3VXhuKXz7Y8CVxZj9OPnTe4umawC6/sr9nJGqxGu/VEfKewAUBXhFqwnB6Wg5Du0sL2CSGNfPRPNC2KVWOmfjN5YhsjXom7MeoLmu+4oFM2XCxPi/oIQ4HO8UCNPi4P18hP/Dxtejsci5WUTeCjH+LgDQQNtLkcgh1DNkvLoV2z8RMQkTuo5m17fdqxNLdrquknTy3U1ANFrS2HEvgy3l3e5T1mcFmb8qqohQK/5rYYYyUBtceCwBCJsQ0SYdeTP4s+XSTfMC8kc7HYK16VnXz8Axj8VE6gzyanqsI0AUvsK4ab2W8qjIgv1t1/7POl2zEfdhMKWWfiY2s8Be5mvWD8l1CezYnP8nKs4sR8NfqO1fVIFTycWD7NDlGmx3qxbDh5yiGUi1LQ33FX5LKi4BK2E5zhZpYvpAZKWf1nsp57zFqZmznx6PSuhslWO4TmLQTYv11hX6NJNpwzjr5J4g1yulxpelPIxr/I+dlZP2XJHzoYWlt3DtJ8+W+mnWeUn84knV5KFzdBTw97KwSDHTMCeWJEa/6qe85VOGRb2PD0oAYlrsf7aV9Ec//q9NfEGqQaXFvNbB6VDavhFnuNLT4ZaPUuVH3ySliia5TG1ake7BUpp5Niod8okCsUIJNR+oeCAWpgSPbZgokLCFoo9pSNs1g32nCQxTQh8Wg8qqF02dGPyLe+JmSHEtX8+01YNRKOnYci4BWnj3Dhl40CvYKciL0rCqcm3FKN8U2L0NIW9krCFzQ9qK1FQO3Z5CbWwt58/SPuPCweTb1FV821stJorW2r0LTLwdSUjbQIv/bpmw0Jy6Qv/tRBiD1wLPk1Oh5bxxKkm4t1m3cXMc7KuQ7WJzex0qGaLNmxpKGdDw69WqUywfrxIumozPEDSRZp1n6an1t2mU6XKoNnOA6XBIeOxNl+tnix3UxWhbSDPdRF+aleyArY8I6ZBGgtrmiSKwXxvexsfPCdO6/otnNIWq3dZPJVancBASp31WpWN2v1jz69RLrfYE2Qhvv4CBNQHNQ6T5y1NxdrI4yWJJ1ctgy2kusb7rKrG2qHIYyBUVuePfsx2m20vVzZksdxkK0QU+3ncBs56/IvlPDjZcBpY3Mn9DckmGT5p0PyJY+OH+nwtFj/L79mKZucVCAGp1eM8P6ibZrkBQr6b+bPvR50GWKen77l5IBjbdDE85z07p4v119xZArVhwpBfpabsK75b36jez/Ztm4aChbRoAYvu9fPkmoDptdvWibo/K9MyigGwX7R4ksLHyKSMvFB/0G/1mAh+em502Wzk+ON/ii7Ji/KAz7bPwniI51EvCgdBEFAaDMIwZCY/itZhQM9sq0s7q1XUGQTnwmZ/1aUBhN3j3R/tyXSzex9vTq7sFot83uWWTk1CEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEOTG+B8k21+Ha9uGcgAAAABJRU5ErkJggg==" alt="weather">
-        </div>
-    <div class="sec-3-head">
-        <p class="sec-3-head-text">Know the mood of your city!</p>
-    </div>
-    <div class="sec-3-des">
-        <p class="sec-3-des-text">Get a songs mix based on the weather!</p>
-        <p class="sec-3-des-text">We suggest songs based on the weather of your city!</p>
+<div class="section-2">
+    <div class="music-image"><img src="songs.png" alt="music image"></div>
+    <div class="sec-2">
+        <p class="sec-2-text">Listen to your favourite songs!</p>
     </div>
     <div class="col-auto search-div">
         
-        <input style="font-size:25px;" type="text" class="form-control search-bar" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Enter your city name">
-        <button  style="width:100px ;border-radius: 0;border-top-right-radius: 30px; border-bottom-right-radius: 30px;" type="button" class="btn btn-dark search-btn">🔍</button>
+        <input style="font-size:25px;" type="text" class="form-control search-bar1" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search">
+        <button style="width:100px ;border-radius: 0;border-top-right-radius: 30px; border-bottom-right-radius: 30px;" type="button" class="btn btn-dark search-btnS">🔍</button>
     </div>
+    <div class="sec-2-smol">
+        <p class="sec-2-smol-text">(log in to create your own queue.)</p>
     </div>
+</div>
+<div class="section" id="weather">
+    <div class="sec-3-img">
+        <img src="data:image/png;base64,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" alt="weather">
+    </div>
+<div class="sec-3-head">
+    <p class="sec-3-head-text">Know the mood of your city!</p>
+</div>
+<div class="sec-3-des">
+    <p class="sec-3-des-text">Get a songs mix based on the weather!</p>
+    <p class="sec-3-des-text">We suggest songs based on the weather of your city!</p>
+</div>
+<div class="col-auto search-div">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input style="font-size:25px;" type="text" class="form-control search-bar" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Enter your city name">
+    <button  style="width:100px ;border-radius: 0;border-top-right-radius: 30px; border-bottom-right-radius: 30px;" type="button" class="btn btn-dark search-btn">🔍</button>
+</div>
+</div>
 </body>
 </html>
