@@ -21,6 +21,26 @@
             text-align: center;
             
         }
+        div.c{
+    text-align: center;
+    align-items: center;
+    
+}
+.button{
+    width: 30%;
+    height: 20px;
+  
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(17, 68, 116);
+    color: white;
+    padding-bottom: 40px;
+}
         /* Modify the background color */
          
         .navbar-custom {
