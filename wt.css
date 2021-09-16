@@ -25,10 +25,9 @@
          width: 50%;
     text-align: center;
     align-items: center;
-    display: inline-block;
+    display: inline;
 }
 .button{
-    width: 30%;
     height: 20px;
   
     border-top-left-radius: 30px;
@@ -40,7 +39,7 @@
     text-align: center;
     background-color: rgb(17, 68, 116);
     color: white;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
 }
         /* Modify the background color */
          
