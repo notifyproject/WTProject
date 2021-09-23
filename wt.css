@@ -163,3 +163,11 @@
 .search-btn{
     font-size: 30px;
 }
+ 
+        .img-thumbnail{
+            border: 20px solid #eaf9fa;
+        }
+        .end-div{
+            margin-top: 30px;
+            padding: 50px;
+        }
